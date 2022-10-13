@@ -1,36 +1,17 @@
-﻿
-Console.Write("номер дня недели ");
-string day = Console.ReadLine();
+﻿// Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 
-if (day == "1")
+// a = 5; b = 7 -> max = 7
+// a = 2 b = 10 -> max = 10
+// a = -9 b = -3 -> max = -3
+
+Console.Write("Введи первое число ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введи второе число ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+if (num1 > num2)
 {
-    Console.WriteLine("Понедельник");
+    Console.WriteLine($"Max={num1}, Min={num2}");
 }
-else if (day == "2")
-{
-    Console.WriteLine("Вторник");
-}
-else if (day == "3")
-{
-    Console.WriteLine("Среда");
-}
-else if (day == "4")
-{
-    Console.WriteLine("Четверг");
-}
-else if (day == "5")
-{
-    Console.WriteLine("Пятница");
-}
-else if (day == "6")
-{
-    Console.WriteLine("Суббота");
-}
-else if (day == "7")
-{
-    Console.WriteLine("Воскресенье");
-}
-else
-{
-    Console.WriteLine("Ошибка ввода");
-}
+else Console.WriteLine($"Max={num2}, Min={num1}");
