@@ -13,3 +13,4 @@ Console.Write("ВВедите число больше 99: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number > 99) Console.WriteLine(ThreeDigit(number));
 else Console.Write("Не верный ввод!");
+
