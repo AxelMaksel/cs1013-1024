@@ -7,7 +7,8 @@ int num = Convert.ToInt32(Console.ReadLine());
 Console.Write("ВВедите показатель степени больше нуля: ");
 int degree = Convert.ToInt32(Console.ReadLine());
 
-if (num > 0 && degree > 0) {
+if (num > 0 && degree > 0)
+{
     int numDegree = Exponentiation(num, degree);
     Console.WriteLine($"Ответ: {num} в степени {degree} = {numDegree}");
 }
