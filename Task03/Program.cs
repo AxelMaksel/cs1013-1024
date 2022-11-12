@@ -1,7 +1,7 @@
 ﻿
 Console.Write("номер дня недели ");
 string day = Console.ReadLine();
-
+if (day == null) day = "0";
 if (day == "1")
 {
     Console.WriteLine("Понедельник");
