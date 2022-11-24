@@ -42,7 +42,14 @@ PrintMatrix(array2D);
 
 Console.WriteLine("===========================");
 Console.Write("Ввелите номер строки с ноля ");
-int row = Convert.ToInt16(Console.ReadLine());
+int row = Convert.ToInt32(Console.ReadLine());
 Console.Write("Ввелите номер столбца с ноля ");
-int column = Convert.ToInt16(Console.ReadLine());
-InsertElementMatrix(array2D, row, column);
+int column = Convert.ToInt32(Console.ReadLine());
+if (row > 0 && column > 0)
+{
+    InsertElementMatrix(array2D, row, column);
+}
+else
+{
+    Console.Write("Вы ввели не верное значение");
+}
